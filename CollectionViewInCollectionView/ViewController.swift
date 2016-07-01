@@ -12,7 +12,6 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     var reuseIdentifier = "VerticalCell"
     var horizantalIdentifier = "HorizantalCell"
     var imageArray = [UIImage(named:"view1"),UIImage(named:"view2"),UIImage(named:"view3"),UIImage(named:"view4"),UIImage(named:"view5")]
-    var horizentalCollectionViewCell : HorizentalCollectionViewCell?
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewLayout: UICollectionViewFlowLayout!
     
@@ -23,7 +22,6 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         self.collectionView.delegate = self
        
         
-        self.horizentalCollectionViewCell = HorizentalCollectionViewCell()
 
         // Do any additional setup after loading the view, typically from a nib.
     }
